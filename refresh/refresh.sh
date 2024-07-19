@@ -9,6 +9,6 @@ brew upgrade
 rustup up
 cargo install-update --all
 
-if type -q brazil-package-cache; then
+if type -q brazil-package-cache 2>/dev/null; then
   brazil-package-cache clean
 fi
